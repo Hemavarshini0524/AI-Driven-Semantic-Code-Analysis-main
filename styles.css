@@ -1,0 +1,236 @@
+
+/* GLOBAL BACKGROUND */
+.stApp {
+    background: #f4f7fc;
+    color: #1e293b;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.block-container {
+    max-width: 1200px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* HEADINGS */
+h1 {
+    color: #172554 !important;
+    font-weight: 800 !important;
+}
+
+h2, h3 {
+    color: #1e3a8a !important;
+    font-weight: 700 !important;
+}
+
+/* FILE UPLOADER */
+[data-testid="stFileUploader"] {
+    background: #ffffff;
+    border: 2px dashed #93b4e8;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+[data-testid="stFileUploader"]:hover {
+    border-color: #2563eb;
+    background: #f8fbff;
+}
+
+/* METRIC CARDS */
+[data-testid="stMetric"] {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.04);
+}
+
+[data-testid="stMetricLabel"] {
+    color: #64748b;
+    font-weight: 600;
+}
+
+[data-testid="stMetricValue"] {
+    color: #1d4ed8;
+    font-weight: 800;
+}
+
+/* BUTTONS */
+.stButton > button,
+.stDownloadButton > button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+    background: #1d4ed8;
+    color: white;
+}
+
+/* EXPANDERS */
+[data-testid="stExpander"] {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+/* TABS */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 12px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background: #eaf0fb;
+    border-radius: 8px;
+    padding: 10px 18px;
+    color: #334155;
+    font-weight: 600;
+}
+
+/* DIVIDERS */
+hr {
+    border-color: #dbe4f0;
+}
+
+/* SIDEBAR */
+
+[data-testid="stSidebar"] {
+    background: #eaf0fb;
+}
+
+[data-testid="stSidebar"] h2 {
+    color: #172554 !important;
+}
+
+/* UPLOAD PLACEHOLDER */
+
+.upload-placeholder {
+    background: #ffffff;
+    border: 2px dashed #93b4e8;
+    border-radius: 18px;
+    padding: 40px 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.upload-placeholder h2 {
+    color: #1e3a8a;
+}
+
+.upload-placeholder p {
+    color: #64748b;
+}
+
+/* ANALYSIS TABS */
+
+.stTabs [data-baseweb="tab-list"] {
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* MAIN HEADER */
+
+.main-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: linear-gradient(120deg, #172554, #2563eb);
+    padding: 28px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.main-header h1 {
+    color: white !important;
+    margin: 0;
+    font-size: 32px;
+}
+
+.main-header p {
+    color: #dbeafe;
+    margin: 8px 0 0 0;
+}
+
+.header-icon {
+    font-size: 42px;
+    background: rgba(255,255,255,0.15);
+    padding: 12px;
+    border-radius: 14px;
+}
+
+.welcome-section {
+    background: white;
+    padding: 22px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 25px;
+}
+
+.welcome-section h2 {
+    margin-top: 0;
+}
+
+.welcome-section p {
+    color: #64748b;
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   READABLE SUCCESS, INFO AND ERROR MESSAGES
+   ========================================= */
+
+/* Common alert styling */
+[data-testid="stAlert"] {
+    border-radius: 12px !important;
+    padding: 16px 20px !important;
+    opacity: 1 !important;
+}
+
+/* Make all alert text clearly readable */
+[data-testid="stAlert"] p,
+[data-testid="stAlert"] span,
+[data-testid="stAlert"] div,
+[data-testid="stAlert"] [data-testid="stMarkdownContainer"] {
+    color: #172033 !important;
+    opacity: 1 !important;
+    font-weight: 600 !important;
+}
+
+/* Success messages */
+[data-testid="stAlert"]:has(svg[data-testid="stIconSuccess"]) {
+    background-color: #dcfce7 !important;
+    border: 1px solid #86efac !important;
+}
+
+/* Information messages */
+[data-testid="stAlert"]:has(svg[data-testid="stIconInfo"]) {
+    background-color: #dbeafe !important;
+    border: 1px solid #93c5fd !important;
+}
+
+/* Error messages */
+[data-testid="stAlert"]:has(svg[data-testid="stIconError"]) {
+    background-color: #fee2e2 !important;
+    border: 1px solid #fca5a5 !important;
+}
+
+/* Warning messages */
+[data-testid="stAlert"]:has(svg[data-testid="stIconWarning"]) {
+    background-color: #fef3c7 !important;
+    border: 1px solid #fcd34d !important;
+}
+
+/* Sidebar navigation text */
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] span {
+    color: #1e293b !important;
+    opacity: 1 !important;
+}
