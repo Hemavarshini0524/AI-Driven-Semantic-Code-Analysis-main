@@ -1,0 +1,6 @@
+ 
+streamlit
+matplotlib
+networkx
+javalang
+python-dotenv

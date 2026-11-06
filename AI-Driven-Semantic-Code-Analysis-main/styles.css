@@ -1,0 +1,25 @@
+ 
+/* Make download buttons clearly visible */
+.stDownloadButton > button {
+    background: #7055b5 !important;
+    color: #ffffff !important;
+    border: 1px solid #7055b5 !important;
+    border-radius: 9px !important;
+    min-height: 44px !important;
+    padding: 10px 20px !important;
+    font-weight: 700 !important;
+    width: 100%;
+}
+
+.stDownloadButton > button *,
+.stDownloadButton > button p,
+.stDownloadButton > button span {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+.stDownloadButton > button:hover {
+    background: #594196 !important;
+    border-color: #594196 !important;
+    color: #ffffff !important;
+}
